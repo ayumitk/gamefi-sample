@@ -16,12 +16,34 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes bounce1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes bounce2 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce-1 {
+  animation: 3s ease-in-out bounce1 infinite;
+}
+.animate-bounce-2 {
+  animation: 2s ease-in-out bounce2 infinite reverse;
+}
+.animate-bounce-3 {
+  animation: 2s ease-in-out bounce2 infinite reverse;
+}
+
+.animate-bounce-4 {
+  animation: 3s ease-in-out bounce1 infinite;
 }
