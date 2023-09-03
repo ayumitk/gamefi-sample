@@ -16,34 +16,42 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto border border-white text-center self-stretch relative z-10 grow">
           ゲームで遊ぶだけでポイントが貯まる！
         </div>
-        <Image
-          className="absolute top-[20%] left-[2%] w-40 opacity-50 animate-bounce-1 hidden sm:block"
-          src="/cloud.svg"
-          width={182}
-          height={74}
-          alt=""
-        />
-        <Image
-          className="absolute bottom-[20%] left-[12%] w-24 opacity-50 animate-bounce-2 hidden sm:block"
-          src="/cloud.svg"
-          width={182}
-          height={74}
-          alt=""
-        />
-        <Image
-          className="absolute top-[24%] right-[3%] w-24 opacity-50 animate-bounce-3 hidden sm:block"
-          src="/cloud.svg"
-          width={182}
-          height={74}
-          alt=""
-        />
-        <Image
-          className="absolute bottom-[12%] right-[10%] w-40 opacity-50 animate-bounce-4 hidden sm:block"
-          src="/cloud.svg"
-          width={182}
-          height={74}
-          alt=""
-        />
+        <div className="absolute top-[20%] left-[2%] animate-bounce-1 hidden sm:block">
+          <Image
+            className="opacity-50 w-40"
+            src="/cloud.svg"
+            width={182}
+            height={74}
+            alt=""
+          />
+        </div>
+        <div className="absolute bottom-[20%] left-[12%] animate-bounce-2 hidden sm:block">
+          <Image
+            className="opacity-50 -scale-x-100 w-24"
+            src="/cloud.svg"
+            width={182}
+            height={74}
+            alt=""
+          />
+        </div>
+        <div className="absolute top-[24%] right-[3%] animate-bounce-3 hidden sm:block">
+          <Image
+            className="opacity-50 -scale-x-100 w-24"
+            src="/cloud.svg"
+            width={182}
+            height={74}
+            alt=""
+          />
+        </div>
+        <div className="absolute bottom-[12%] right-[10%] animate-bounce-4 hidden sm:block">
+          <Image
+            className="opacity-50 w-40"
+            src="/cloud.svg"
+            width={182}
+            height={74}
+            alt=""
+          />
+        </div>
       </div>
       <div className="text-center py-80">content</div>
     </div>
